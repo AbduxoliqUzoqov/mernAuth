@@ -1,0 +1,304 @@
+body{
+   background: #f7f7f7;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.wrapper{
+   width: 325px;
+   background: #fff;
+   box-shadow: 0 0 10px #000;
+   padding: 10px;
+   border-radius: 8px;
+}
+
+.wrapper img{
+   object-fit: cover;
+   border-radius: 50%;
+}
+.form{
+   margin: 10px 0;
+}
+.form header{
+   font-size: 18px;
+   font-weight: bold;
+   margin: 5px;
+   padding: 10px 0;
+   border-bottom: solid 1px #ccc;
+}
+
+.form form .field{
+   margin: 5px;
+}
+.form form .name_info{
+   display: flex;
+   gap: 5px;
+}
+.form form .field .label{
+   font-size: 12px;
+}
+.gender{
+   font-size: 25px;
+   margin: 10px;
+   padding: 5px;
+   border: 2px solid #444;
+   border-radius: 5px;
+}
+
+.form form .field input{
+   outline: none;
+   border: solid 1px #ccc;
+   height: 2em;
+   width: 100%;
+   border-radius: 3px;
+}
+.form form button{
+   outline: none;
+   border: none;
+   background: #000;
+   color: #fff;
+   margin: 5px;
+   padding: 8px 16px;
+   font-size: 18px;
+   border-radius: 6px;
+}
+.form form p {
+   margin: 7px;
+}
+
+
+
+.flex{
+  display: flex;
+  flex-direction: rows;
+  padding: 8px;
+}
+.chat-data{
+   flex: 1;
+   display: flex;
+   align-items: center;
+   border-right: 2px solid #333;
+}
+.chat-data img{
+   object-fit: cover;
+   border-radius: 50%;
+   width: 45px;
+   height: 45px;
+}
+.chat-data .flex2{
+   display: flex;
+   flex-direction: column;
+   margin-left: 8px;
+}
+.chat-data .flex2 h4{
+   font-weight: 700;
+   font-size: 20px;
+   margin: 4px;
+}
+.chat-data .flex2 span{
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 2px;
+   margin: 4px;
+}
+.flex2:after{
+   content: "";
+   width: 110%;
+   height: 1px;
+   margin-top: 6px;
+   background: #f2ededcc;
+   display: flex;
+}
+.auth-user{
+   margin: 4px 4px 4px 7px;
+   position: relative;
+}
+.auth-user img{
+   object-fit: cover;
+   border-radius: 50%;
+   width: 44px;
+   height: 44px;
+}
+.auth-user:after{
+   content: "";
+   width: 12px;
+   height: 12px;
+   background: #28ff24;
+   border-radius: 50%;
+   display: flex;
+   position: absolute;
+   right: 3px;
+   bottom: 3px;
+}
+
+.flex3{
+   display: flex;
+   flex-direction: column;
+   border-top: 1px solid #555;
+}
+.chat-area{
+   height: 540px;
+   overflow-y: auto;
+   overflow-x: hidden;
+   position: relative;
+   padding: 8px 0;
+}
+.chat-area::-webkit-scrollbar{
+   width: 0px;
+}
+
+.form-input .df{
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   position: relative;
+}
+
+.form-input .df textarea{
+   flex: 1;
+   resize: none;
+   width: calc(100% - 35px);
+   height: 35px;
+   max-height: 100px;
+   outline: none;
+}
+
+.form-input .df button{
+   position: absolute;
+   bottom: 1px;
+   width: 40px;
+   height: 40px;
+   outline: none;
+}
+
+.chat-area .xabar-keldi{
+   display: flex;
+   justify-content: flex-start;
+   position: relative;
+   margin: 15px 0;
+   width: calc(100% - 100px);
+}
+.chat-area .xabar-jonatildi{
+   display: flex;
+   justify-content: flex-end;
+   position: relative;
+   margin: 15px 0;
+   width: calc(100% - 70px);
+   margin-left: auto;
+}
+.chat-area .xabar-keldi img{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   position: absolute;
+   bottom: 3px;
+}
+
+.chat-area .xabar-keldi .ds{
+   position: relative;
+   left: 35px;
+   background: #444;
+   padding: 5px 7px;
+   border-radius: 10px 10px 10px 0;
+}
+.chat-area .xabar-jonatildi .ds{
+   position: relative;
+   background: #6569fe;
+   padding: 5px 7px;
+   border-radius: 10px 10px 0 10px;
+}
+
+
+.ds p{
+   word-wrap: break-word;
+   color: #fff;
+   margin: 2px 0;
+   padding: 3px 2px 10px 2px;
+}
+.ds .time{
+   font-weight: 500;
+   color: #d4ddf9;
+   position: absolute;
+   bottom: 1px;
+   right: 6px;
+   font-size: 13px;
+   margin-top: 13px;
+}
+.ds .name{
+   font-weight: 600;
+   color: #ff6b49;
+   margin: 2px;
+   font-size: 15px;
+   line-height: 5px;
+}
+
+.modal{
+   display: none;
+}
+.modal.wow{
+   display: block;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: rgba(0,0,0,0.75);
+   width: 100%;
+   height: 100%;
+   z-index: 1000;
+}
+.position{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   width: 280px;
+   margin: 80px auto;
+   padding: 10px;
+   background: #fff;
+   border-radius: 10px;
+}
+.modal.wow .profil img{
+   width: 53px;
+   height: 53px;
+   border-radius: 50%;
+   object-fit: center;
+}
+.modal .position .close{
+   position: absolute;
+   right: 10px;
+   top: 10px;
+   /*background: red;*/
+   border-radius: 3px;
+   border: none;
+   color: #000;
+   font-size: 22px;
+}
+.profil{
+   margin: 30px 0 0 0;
+}
+.profil button{
+   border-radius: 4px;
+   outline: none;
+   border: 2px solid #3d91fc;
+   color: #3d91fc;
+   font-size: 12px;
+}
+.position .fl{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.fl .user{
+   margin: 10px 6px;
+   padding: 5px;
+}
+.user p{
+   margin: 3px 0;
+   font-size: 22px;
+   font-weight: 700;
+   line-height: 25px;
+}
+
+
+
